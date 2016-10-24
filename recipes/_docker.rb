@@ -19,6 +19,7 @@ docker_installation_package 'default' do
 end
 
 docker_service 'default' do
-  storage_driver 'aufs'
+  storage_driver node['docker_host']['docker']['storage_driver']
+  iptables node['docker_host']['docker']['manage_iptables']
   action [:create, :start]
 end

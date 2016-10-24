@@ -7,8 +7,5 @@
 # All rights reserved - Do Not Redistribute
 #
 
-# setup firewall
-include_recipe 'docker_host::_firewall'
-
 # setup docker
 include_recipe 'docker_host::_docker'

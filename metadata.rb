@@ -6,9 +6,9 @@ issues_url       'https://github.com/JCotton1123/chef-docker_host/issues'
 license          'All rights reserved'
 description      'Installs/Configures docker host'
 long_description 'Installs/Configures docker host'
-version          '0.2.0'
+version          '0.3.0'
 
 supports 'ubuntu'
 
-depends 'chef-apt-docker', '~> 1.0'
-depends 'docker', '~> 2.9'
+depends 'chef-apt-docker', '~> 2.0'
+depends 'docker', '~> 2.17'
